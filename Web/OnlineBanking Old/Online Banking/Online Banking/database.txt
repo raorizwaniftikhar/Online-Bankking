@@ -1,0 +1,8 @@
+customer
+--------
+custid,firstname,lastname,address,email,sex,contact,acc_number,balance,acc_type
+
+
+accounts
+--------
+acc_type,minbalance,

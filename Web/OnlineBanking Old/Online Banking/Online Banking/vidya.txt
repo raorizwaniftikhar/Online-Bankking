@@ -1,0 +1,47 @@
+nd = TreeView1.Nodes.Find("HOTEL", True)(0).Nodes.Add("LODGING", "Lodging", 2)
+        nd = TreeView1.Nodes.Find("LODGING", True)(0).Nodes.Add("BOOKING", "Booking", 2)
+        nd = TreeView1.Nodes.Find("BOOKING", True)(0).Nodes.Add("GUESTROOM", "Guest Room")
+        nd = TreeView1.Nodes.Find("GUESTROOM", True)(0).Nodes.Add("CHECKIN", "Check In")
+        nd.Tag = "checkin"
+        nd = TreeView1.Nodes.Find("GUESTROOM", True)(0).Nodes.Add("CHECKOUT", "Check Out")
+        nd.Tag = "checkout"
+
+        nd = TreeView1.Nodes.Find("BOOKING", True)(0).Nodes.Add("SUITES", "Suites")
+
+        nd = TreeView1.Nodes.Find("SUITES", True)(0).Nodes.Add("CHECKIN1", "Check In")
+        nd.Tag = "checkin1"
+        nd = TreeView1.Nodes.Find("SUITES", True)(0).Nodes.Add("CHECKINOUT1", "Check Out")
+        nd.Tag = "checkout1"
+
+        nd = TreeView1.Nodes.Find("BOOKING", True)(0).Nodes.Add("CONFERENCE", "Conference")
+
+
+        nd = TreeView1.Nodes.Find("CONFERENCE", True)(0).Nodes.Add("CONFERENCEBOOKING", "Conference Booking")
+        nd.Tag = "confbook"
+
+        nd = TreeView1.Nodes.Find("CONFERENCE", True)(0).Nodes.Add("CONFERENCEBILLING", "Conference Billing")
+        nd.Tag = "confbilling"
+
+        nd = TreeView1.Nodes.Find("BOOKING", True)(0).Nodes.Add("CATERING", "Catering")
+        TreeView1.Nodes.Find("CATERING", True)(0).Nodes.Add("ORDER", "Catering order")
+		nd.Tag = "order"
+        nd = TreeView1.Nodes.Find("CATERING", True)(0).Nodes.Add("CATERINGBILL", "Catering Billing")
+		nd.Tag = "catbill"
+        nd = TreeView1.Nodes.Find("LODGING", True)(0).Nodes.Add("DETAILS", "Details(Add/Modify/Delete)", 2)
+        nd = TreeView1.Nodes.Find("DETAILS", True)(0).Nodes.Add("GUESTROOM1 ", "Guest Room ")
+		nd.Tag = "guest"
+        nd = TreeView1.Nodes.Find("DETAILS", True)(0).Nodes.Add("SUITES1 ", "Suites")
+		nd.Tag = "suites"
+        nd = TreeView1.Nodes.Find("DETAILS", True)(0).Nodes.Add("CONFERENCE1", "Conference")
+		nd.Tag = "conf"
+        nd = TreeView1.Nodes.Find("DETAILS", True)(0).Nodes.Add("CATERING1", "Catering")
+		nd.Tag = "catt"
+        nd = TreeView1.Nodes.Find("LODGING", True)(0).Nodes.Add("SEARCH", "Search", 2)
+		nd.Tag = "search"
+        nd = TreeView1.Nodes.Find("LODGING", True)(0).Nodes.Add("REPORTS", "Reports", 2)
+        nd = TreeView1.Nodes.Find("REPORTS", True)(0).Nodes.Add("REPORTS1", "Guest Room Details")
+        nd.Tag = "r1"
+        nd = TreeView1.Nodes.Find("REPORTS", True)(0).Nodes.Add("REPORTS2", "Suites Room Details")
+        nd.Tag = "r2"
+        nd = TreeView1.Nodes.Find("LODGING", True)(0).Nodes.Add("EXIT", "Exit", 2)
+		nd.Tag = "exit"
